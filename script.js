@@ -11,8 +11,6 @@ const teachers = [
   // 0. Per ogni insegnante stampa in console la frase:
   // [Nome insengante] è l'insegnante in posizione [i]
  const name = teachers[1]
-
-
 for (let i = 0; i < teachers.length; i++) {
     console.log(teachers[i], "è in posizione", i);
 }
@@ -26,21 +24,30 @@ for (let i = 0; i < teachers.length; i++) {
   console.log(fourthTeacher);
   
   // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
-  
-  
+  const splice = teachers.splice(4, 0, "Patrick")
+  console.log(splice)
+
+
   // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
-  const lastTeacher = null;
+  const lastTeacher = teachers.pop();
+  console.log(teachers)
   
   // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-  const firstTeacher = null;
+  const firstTeacher = teachers.splice(0, 1);
+  console.log(firstTeacher)
   
   // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
+  teachers[teachers.length] = "Vanessa"
+  console.log(teachers)
   
   // 6. Aggiungi un insegnante di nome 'Sarah' all'inizio dell'array teachers
+  teachers[0] = "Sara"
+  console.log(teachers)
   
   // 7. Verifica se 'Fabio' è presente nell'array teachers
   // e salva il risultato nella variabile isFabioPresent
-  const isFabioPresent = null;
+  const isFabioPresent = teachers;
+  console.log(teachers[1])
   
   // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
   // e salvalo nella variabile lewisIndex
