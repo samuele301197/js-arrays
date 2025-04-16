@@ -1,8 +1,8 @@
 const teachers = [
-    'Nathan',
-    'Ed',
-    'Fabio',
-    'Phil',
+    'Nathan', 
+    'Ed', 
+    'Fabio', 
+    'Phil', 
     'Carlo',
     'Lewis',
     'Luca'
@@ -10,7 +10,15 @@ const teachers = [
   
   // 0. Per ogni insegnante stampa in console la frase:
   // [Nome insengante] è l'insegnante in posizione [i]
-  
+ const name = teachers[1]
+
+
+for (let i = 0; i < teachers.length; i++) {
+    console.log(teachers[i], "è in posizione", i);
+}
+
+
+
   
   // 1. Utilizzando un indice sull'array teachers, cambia il valore della
   // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
@@ -18,6 +26,7 @@ const teachers = [
   console.log(fourthTeacher);
   
   // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
+  
   
   // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
   const lastTeacher = null;
