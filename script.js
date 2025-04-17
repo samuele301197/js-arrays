@@ -62,4 +62,4 @@ for (let i = 0; i < teachers.length; i++) {
   // 10. Verifica se l'array teachers è vuoto
   // e salva il risultato nella variabile isTeachersEmpty
   const isTeachersEmpty = teachers.length === 0;
-  console.log(isTeachersEmpty)
+  console.log(isTeachersEmpty);
